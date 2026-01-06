@@ -6,7 +6,7 @@ async function scrape() {
   const response = await fetch(url);
   const html = await response.text();
 
-  // Extraction des titres d’articles
+  // Extraction des titres d’articles Over-Blog
   const regex = /<h2 class="post-title">[\s\S]*?<a[^>]*>(.*?)<\/a>/g;
 
   const results = [];

@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
-import fs from "fs";
+const fetch = require("node-fetch");
+const fs = require("fs");
 
 async function scrape() {
   const url = "https://jessmiam.over-blog.com/tag/gouters/";
@@ -22,4 +22,3 @@ async function scrape() {
 }
 
 scrape();
-
